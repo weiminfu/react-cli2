@@ -12,11 +12,13 @@
 import vote from './vote';
 import personal from './personal';
 import todo from './todo';
+import custom from './custom';
 
 let action={
 	vote,
 	personal,
-	todo
+	todo,
+	custom
 };
 
 export default action;

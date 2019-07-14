@@ -38,7 +38,7 @@ class Custom extends Component {
 						<Route path='/custom' exact component={List}></Route>
 						<Route path='/custom/list' component={List}></Route>
 						<Route path='/custom/create' component={Create}></Route>
-						<Route path='/custom/detail' component={Detail}></Route>
+						<Route path='/custom/detail/:id' component={Detail}></Route>
 						
 						{/*进入到客户管理页面，我们让其默认展示list区域内容（第一种指定渲染组件的操作也可以），这种重定向的方式也可以*/}
 						{/*<Redirect from='/custom' to='/custom/list'/>*/}
@@ -48,7 +48,6 @@ class Custom extends Component {
 		);
 	}
 }
-
 export default connect(
 	mapStateToProps,
 )(Custom);
